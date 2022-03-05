@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+
+    <h3>Did you find a disc? Submit it here!</h3>
+    <form action="/submit" method = "POST">
+        <p>Name <input type = "text" name = "name" /></p>
+        <p>Number on disc <input type = "text" name = "discnum" /></p>
+        <p>Location of disc <input type = "text" name = "location" /></p>
+        <p><input type = "submit" value = "Submit" /></p>
+    </form>
+
+{% endblock %}
