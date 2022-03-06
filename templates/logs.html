@@ -1,9 +1,8 @@
 {% extends 'base/base.html' %}
 {% block content %}
 
-    {% for report in data %}
-        <p>{{ report }}</p>
+    {% for value in data.values() %}
+        <p><span class="stand-out">{{ value[0] }} </span> {{ value[1] }}</p>
     {% endfor %}
-
 
 {% endblock %}

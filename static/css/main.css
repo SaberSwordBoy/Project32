@@ -1,4 +1,16 @@
 
+.stand-out {
+    color: lightblue;
+    font-size: 2rem;
+    padding-right: 16px;
+}
+
+.dim {
+    color: lightskyblue;
+    font-size: 1rem;
+    padding: 10px;
+}
+
 .text {
   text-align: center;
   color: ghostwhite;
@@ -23,14 +35,8 @@ h1 {
   max-width: 14rem;
 }
 
-
 h2 {
   color: #ff3e00;
-
-}
-
-button {
-  color: #ff300;
 }
 
 p {
@@ -81,17 +87,44 @@ p {
     font-size: 16px;
   }
 
-  .button-30:focus {
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   }
 
-  .button-30:hover {
+
+
+.button-30:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
-  }
+}
 
-  .button-30:active {
+.button-30:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
-  }
 
+}
+input {
+      box-shadow: inset #abacaf 0 0 0 2px;
+      border: 0;
+      background: rgba(0, 0, 0, 0);
+      appearance: none;
+      /*width: 50%;*/
+      position: relative;
+      border-radius: 3px;
+      padding: 9px 12px;
+      line-height: 1.4;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-weight: 400;
+      height: 40px;
+      transition: all .2s ease;
+   }
+input:hover{
+    box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+}
+
+input:focus{
+  background: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}

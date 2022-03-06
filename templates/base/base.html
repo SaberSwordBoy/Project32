@@ -6,19 +6,20 @@
       <meta name="viewport" content="width=device-width">
       <title>Project 32</title>
       <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
       <script src="../../static/script.js"></script>
   </head>
 
   <body>
 
     <a class="button-30" href="{{ url_for('index') }}">Home</a>
-    <a class="button-30" href="{{ url_for('report') }}">About</a>
-    <a class="button-30" href="{{ url_for('report') }}">How To Join</a>
+    <a class="button-30" href="{{ url_for('about_page') }}">About</a>
+    <a class="button-30" href="{{ url_for('join') }}">How To Join</a>
     <a class="button-30" href="{{ url_for('report') }}">Log A Disc</a>
     <a class="button-30" href="{{ url_for('logs') }}">Logs</a>
 
     <h1>Project <strong>32</strong></h1>
-    <h2>NewPaltzDisc {{ randomDiscNumber }}</h2>
+    <h2>NewPaltzDisc_{{ randomDiscNumber }}</h2>
 
     {% block content %}
     {% endblock %}
